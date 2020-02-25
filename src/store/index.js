@@ -36,10 +36,10 @@ export default new Vuex.Store({
 
   actions: {
 
-    async getMovies({ commit, dispatch }, newMovie) {
+    async getMovies({ commit, dispatch }) {
       try {
-        let res = await _api.post("", newMovie)
-        commit("addMovie", res.data.results)
+        let res = await _api.get("")
+        commit("setMovies", res.data.results)
 
       } catch (error) {
         console.error(error)

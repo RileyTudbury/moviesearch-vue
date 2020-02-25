@@ -1,5 +1,7 @@
 <template>
-  <h1>Movie goes here!</h1>
+  <li>
+    <h5>{{ movieData.title }}</h5>
+  </li>
 </template>
 
 <script>
