@@ -41,7 +41,9 @@ export default {
 
 <style>
 body {
+  text-shadow: 2px 2px 5px black;
+  min-height: 100vh;
   color: white;
-  background-color: black;
+  background-image: url(https://wallpaperaccess.com/full/304265.jpg);
 }
 </style>
