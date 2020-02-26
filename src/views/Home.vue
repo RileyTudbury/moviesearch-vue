@@ -38,3 +38,10 @@ export default {
   }
 };
 </script>
+
+<style>
+body {
+  color: white;
+  background-color: black;
+}
+</style>
