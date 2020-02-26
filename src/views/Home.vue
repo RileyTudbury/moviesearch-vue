@@ -6,6 +6,11 @@
       </div>
     </div>
     <div class="row">
+      <div class="col-12 text-center" id="search-bar">
+        <movie-search />
+      </div>
+    </div>
+    <div class="row">
       <div class="col-4" id="movies-list">
         <movies />
       </div>
@@ -21,13 +26,15 @@
 import Movies from "@/components/Movies";
 import Movie from "@/components/Movie";
 import MovieDetail from "@/components/MovieDetail";
+import MovieSearch from "@/components/MovieSearch";
 
 export default {
   name: "Home",
   components: {
     Movies,
     Movie,
-    MovieDetail
+    MovieDetail,
+    MovieSearch
   }
 };
 </script>

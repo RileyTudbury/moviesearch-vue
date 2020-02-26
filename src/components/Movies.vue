@@ -2,9 +2,9 @@
   <div class="row">
     <div class="col text-center">
       <h1>Movies go here!</h1>
-      <ul>
+      <ol>
         <movie v-for="movieObj in movies" :key="movieObj._id" :movieData="movieObj" />
-      </ul>
+      </ol>
     </div>
   </div>
 </template>

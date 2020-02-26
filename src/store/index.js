@@ -4,7 +4,7 @@ import axios from 'axios'
 
 
 let _api = axios.create({
-  baseURL: "https://api.themoviedb.org/3/search/movie?api_key=606e6aee588b47993fffe6d9530d07a6&page=1&include_adult=false&query=frozen",
+  baseURL: "https://api.themoviedb.org/3/search/movie?api_key=606e6aee588b47993fffe6d9530d07a6&page=1&include_adult=false&query=",
   timeout: 3000
 })
 
@@ -36,9 +36,9 @@ export default new Vuex.Store({
 
   actions: {
 
-    async getMovies({ commit, dispatch }) {
+    async getMovies({ commit, dispatch }, searchParam) {
       try {
-        let res = await _api.get("")
+        let res = await _api.get(searchParam)
         commit("setMovies", res.data.results)
 
       } catch (error) {
