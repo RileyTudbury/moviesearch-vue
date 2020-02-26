@@ -1,5 +1,5 @@
 <template>
-  <li class="text-left my-2">
+  <li class="text-left my-2" @click="setActive">
     <img
       :src="'https://image.tmdb.org/t/p/w500/' + movieData.poster_path"
       alt="Movie Poster"
@@ -24,9 +24,9 @@ export default {
 
 <style scoped>
 .movie {
-  cursor: pointer;
 }
 li {
   display: flex;
+  cursor: pointer;
 }
 </style>
